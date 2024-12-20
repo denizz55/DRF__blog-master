@@ -18,7 +18,7 @@ Django REST Framework предоставляет классы `generics`, кот
 
 ### Примеры классов `generics`:
 
-```python
+
 ```
 from rest_framework import generics
 from .models import Post, Comment, Category
@@ -55,12 +55,12 @@ class CategoryDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CategorySerializer
 
 ```python
+```
 Назначение прав доступа (`permissions`)
-
-Права доступа управляют тем, кто может выполнять определенные действия с объектами. В Django REST Framework есть несколько встроенных разрешений, а также возможность создавать собственные.
+```
 
 ### Примеры разрешений:
-```
+
 
 from rest_framework import permissions
 
