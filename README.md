@@ -18,7 +18,7 @@ Django REST Framework предоставляет классы `generics`, кот
 
 ### Примеры классов `generics`:
 
-python
+```python
 from rest_framework import generics
 from .models import Post, Comment, Category
 from .serializers import PostSerializer, CommentSerializer, CategorySerializer
@@ -60,7 +60,7 @@ class CategoryDetail(generics.RetrieveUpdateDestroyAPIView):
 
 ### Примеры разрешений:
 
-python
+```python
 from rest_framework import permissions
 
 # Разрешение, которое позволяет только владельцу объекта его редактировать или удалять
